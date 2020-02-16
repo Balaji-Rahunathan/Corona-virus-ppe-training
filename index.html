@@ -14,7 +14,7 @@
         <img class="bgImgTop" src="assets/wave-1.png">
         <img class="bgImgBottom" src="assets/wave-2.png">
 
-        <div class="slideContainer">
+        <div class="slideContainer fade" >
             <div class="header">
                 <h1>PROCEDURE TO WEAR <span class="colored">GOWN</span></h1>
             </div>
@@ -57,13 +57,66 @@
                         </p>
                     </div>
                     <div class="nextButton">
-                        <a id="next" style="display: none;" onclick="reset()">
+                        <a id="next" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Next Button.png" width="80%">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="slideContainer fade">
+            <div class="header">
+                <h1>PROCEDURE TO WEAR <span class="colored">MASK</span></h1>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="imageContainer">
+                        <div class="leftImage">
+                            <img src="assets/Group 305@2x.png" width="80%">
+                        </div>
+                        <div class="leftImage">
+                            <img src="assets/Group 314@2x.png" width="80%">
+                        </div>
+                    </div>
+                    <div class="leftText">
+                        <ul>
+                            <li class="textContent">
+                                Fully cover torso from neck to knees, arms to end of wrists, and wrap around the back
+                            </li>
+                            <li class="textContent">
+                                Fasten in back of neck and waist.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prevButton">
+                        <a id="prev" style="display: none;" onclick="reset()">
+                            <img src="assets/Next Button.png" width="20%">
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="imageContainer">
+                        <div id="rightImage" class="rightImage" id="dragContainer">
+                            <img id="draggable" draggable="true" src="assets/cout.png" width="80%">
+                        </div>
+                        <div id="div1" class="div1">
+                        </div>
+                    </div>
+                    <div class="leftText">
+                        <p class="textContent">Drag the gown to the employee for move to next slid.
+                        </p>
+                    </div>
+                    <div class="nextButton">
+                        <a id="next" style="display: none;" onclick="plusDivs(1)">
+                            <img src="assets/Next Button.png" width="80%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 </body>
