@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <style>
+        body,html { height: 100%;margin: 0;}
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <!-- Static Background -->
+        <img class="bgImgTop" src="assets/wave-1.png">
+        <img class="bgImgBottom" src="assets/wave-2.png">
+
+        <div class="slideContainer">
+            <div class="header">
+                <h1>PROCEDURE TO WEAR <span class="colored">GOWN</span></h1>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="imageContainer">
+                        <div class="leftImage">
+                            <img src="assets/Group 305@2x.png" width="80%">
+                        </div>
+                        <div class="leftImage">
+                            <img src="assets/Group 314@2x.png" width="80%">
+                        </div>
+                    </div>
+                    <div class="leftText">
+                        <ul>
+                            <li class="textContent">
+                                Fully cover torso from neck to knees, arms to end of wrists, and wrap around the back
+                            </li>
+                            <li class="textContent">
+                                Fasten in back of neck and waist.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prevButton">
+                        <a id="prev" style="display: none;" onclick="reset()">
+                            <img src="assets/Next Button.png" width="20%">
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="imageContainer">
+                        <div id="rightImage" class="rightImage" id="dragContainer">
+                            <img id="draggable" draggable="true" src="assets/cout.png" width="80%">
+                        </div>
+                        <div id="div1" class="div1">
+                        </div>
+                    </div>
+                    <div class="leftText">
+                        <p class="textContent">Drag the gown to the employee for move to next slid.
+                        </p>
+                    </div>
+                    <div class="nextButton">
+                        <a id="next" style="display: none;" onclick="reset()">
+                            <img src="assets/Next Button.png" width="80%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="controller.js">
+</script>
+
+
+
+</html>
