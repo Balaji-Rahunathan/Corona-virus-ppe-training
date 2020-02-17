@@ -1,16 +1,16 @@
 .bgImgTop{
-    position: absolute;
+    position: fixed;
     top:0;
     left: 0;
     width: 25%;
-    z-index: -10;
+    z-index: 10;
 }
 .bgImgBottom{
     position: fixed;
     bottom:0;
     right: 0;
     width: 25%;
-    z-index: -10;
+    z-index: 10;
     
 }
 .mainContainer{
@@ -31,7 +31,7 @@
 .header{
     margin: 50px;
     padding: 100px;
-    width:100%;
+    /* width:100%; */
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
@@ -160,11 +160,34 @@ ul li::before {
     animation-name: example;
     animation-duration: 0.2s;
   
-  }
+}
   
-  @keyframes example {
+@keyframes example {
     from { left:1000px; }
     to{ left:0px; }
+}
+
+  /* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    overflow:auto;
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#3fbcf9; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
   }
 
 
@@ -264,3 +287,16 @@ h1{
 }
 
   }
+
+
+@media only screen and (max-width: 1440px) {
+    .prevButton{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width:10%;
+        height: 50px;
+        padding: 0px;
+    }
+}
+

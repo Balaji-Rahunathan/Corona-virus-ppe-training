@@ -5,6 +5,10 @@ $('#draggable').draggable({
         target.style.left = 0
         target.style.right = 0
         target.style.bottom = 0
+    },
+    drag: function (event, ui) {
+        var target = document.getElementById("draggable")
+        target.style.opacity=0.5
     }
 });
 
@@ -16,6 +20,7 @@ $("#div1").droppable({
         target.style.left = 0
         target.style.right = 0
         target.style.bottom = 0
+        target.style.opacity=1
         document.getElementById("next").style.display = "block";
     }
 });
@@ -29,6 +34,7 @@ $("#rightImage").droppable({
         target.style.left = 0
         target.style.right = 0
         target.style.bottom = 0
+        target.style.opacity=1
         document.getElementById("next").style.display = "none";
     }
 });
