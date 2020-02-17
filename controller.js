@@ -1,47 +1,3 @@
-$('#draggable').draggable({
-    stop: function (event, ui) {
-        var target = document.getElementById("draggable")
-        target.style.top = 0
-        target.style.left = 0
-        target.style.right = 0
-        target.style.bottom = 0
-    },
-    drag: function (event, ui) {
-        var target = document.getElementById("draggable")
-        target.style.opacity=0.5
-    }
-});
-
-$("#div1").droppable({
-    drop: function (event, ui) {
-        var target = document.getElementById("draggable")
-        event.target.appendChild(document.getElementById("draggable"))
-        target.style.top = 0
-        target.style.left = 0
-        target.style.right = 0
-        target.style.bottom = 0
-        target.style.opacity=1
-        document.getElementById("next").style.display = "block";
-    }
-});
-
-$("#rightImage").droppable({
-    drop: function (event, ui) {
-        console.log(event.target.id)
-        var target = document.getElementById("draggable")
-        event.target.appendChild(document.getElementById("draggable"))
-        target.style.top = 0
-        target.style.left = 0
-        target.style.right = 0
-        target.style.bottom = 0
-        target.style.opacity=1
-        document.getElementById("next").style.display = "none";
-    }
-});
-function reset() {
-    document.getElementById("next").style.display = "none";
-}
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -59,4 +15,57 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "flex";  
+
+
+
+
+$("#draggable"+slideIndex).draggable({
+    stop: function (event, ui) {
+        var target = document.getElementById("draggable"+slideIndex);
+        target.style.top = 0
+        target.style.left = 0
+        target.style.right = 0
+        target.style.bottom = 0
+    },
+    drag: function (event, ui) {
+        var target = document.getElementById("draggable"+slideIndex);
+        // target.style.opacity=0.5;
+        // console.log(target)
+    }
+});
+
+
+$("#div"+slideIndex).droppable({
+    drop: function (event, ui) {
+        var target = document.getElementById("draggable"+slideIndex);
+        console.log(target)
+        event.target.appendChild(document.getElementById("draggable"+slideIndex));
+        target.style.top = 0
+        target.style.left = 0
+        target.style.right = 0
+        target.style.bottom = 0
+        target.style.opacity=1
+        document.getElementById("next"+slideIndex).style.display = "block";
+    }
+});
+
+$("#rightImage"+slideIndex).droppable({
+    drop: function (event, ui) {
+        console.log(event.target.id)
+        var target = document.getElementById("draggable"+slideIndex)
+        event.target.appendChild(document.getElementById("draggable"+slideIndex))
+        target.style.top = 0
+        target.style.left = 0
+        target.style.right = 0
+        target.style.bottom = 0
+        target.style.opacity=1
+        document.getElementById("next"+slideIndex).style.display = "none";
+    }
+});
+
 }
+
+function reset() {
+    document.getElementById("next"+slideIndex).style.display = "none";
+}
+

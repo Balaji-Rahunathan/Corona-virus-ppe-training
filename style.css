@@ -91,7 +91,7 @@ h1{
     margin: 0px 10px;
 
 }
-#div1{
+.div1{
     background-image: url("assets/man-without-cout.png");
     background-repeat: no-repeat;
     background-size: 90% 90%;
@@ -158,13 +158,13 @@ ul li::before {
     -webkit-animation-duration: 1.5s;
     position: relative !important;
     animation-name: example;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
   
 }
   
 @keyframes example {
-    from { left:1000px; }
-    to{ left:0px; }
+    from { top:1000px; }
+    to{ top:0px; }
 }
 
   /* width */
@@ -223,7 +223,7 @@ ul li::before {
     margin: 10px 10px;
 
 }
-#div1{
+.div1{
     background-image: url("assets/man-without-cout.png");
     background-repeat: no-repeat;
     background-size: 90% 90%;
