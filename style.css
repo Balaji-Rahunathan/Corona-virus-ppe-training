@@ -164,8 +164,8 @@ ul li::before {
 }
   
 @keyframes example {
-    from { top:1000px; }
-    to{ top:0px; }
+    from { bottom:1000px; }
+    to{ bottom:0px; }
 }
 
   /* width */
