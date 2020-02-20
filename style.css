@@ -10,7 +10,7 @@
     bottom:0;
     right: 0;
     width: 25%;
-    z-index: 10;
+    /* z-index: 10; */
     
 }
 .mainContainer{
@@ -282,10 +282,11 @@ h1{
 .nextButton{
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-around;
     /* width:90%; */
     /* height: 120px; */
     padding: 0px;
+    /* z-index: 12; */
 }
 .prevButton{
     display: flex;
