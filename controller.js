@@ -1,10 +1,20 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 
-function plusDivs(n) {
-showDivs(slideIndex += n);
-$("html, body").animate({ scrollTop: 0 },100);
-reset()
+function plusDivs(n) {  
+    var resetdiv = document.getElementById("rightImage"+slideIndex);
+    if(resetdiv){
+        resetdiv.appendChild(document.getElementById("draggable"+slideIndex));
+        target = document.getElementById("draggable"+slideIndex);
+        target.style.top = 0
+        target.style.left = 0
+        target.style.right = 0
+        target.style.bottom = 0
+        target.style.opacity=1
+    }
+    showDivs(slideIndex += n);
+    $("html, body").animate({ scrollTop: 0 },100);
+    reset()
 }
 
 function showDivs(n) {
@@ -25,11 +35,11 @@ $("#draggable"+slideIndex).draggable({
         target.style.left = 0
         target.style.right = 0
         target.style.bottom = 0
+        target.style.opacity=1
     },
     drag: function (event, ui) {
         var target = document.getElementById("draggable"+slideIndex);
-        // target.style.opacity=0.5;
-        // console.log(target)
+        target.style.opacity=0.5;
     }
 });
 
@@ -37,7 +47,6 @@ $("#draggable"+slideIndex).draggable({
 $("#div"+slideIndex).droppable({
     drop: function (event, ui) {
         var target = document.getElementById("draggable"+slideIndex);
-        console.log(target)
         event.target.appendChild(document.getElementById("draggable"+slideIndex));
         target.style.top = 0
         target.style.left = 0
@@ -50,7 +59,6 @@ $("#div"+slideIndex).droppable({
 
 $("#rightImage"+slideIndex).droppable({
     drop: function (event, ui) {
-        console.log(event.target.id)
         var target = document.getElementById("draggable"+slideIndex)
         event.target.appendChild(document.getElementById("draggable"+slideIndex))
         target.style.top = 0
@@ -65,6 +73,9 @@ $("#rightImage"+slideIndex).droppable({
 }
 
 function reset() {
-    document.getElementById("next"+slideIndex).style.display = "none";
+    if(document.getElementById("next"+slideIndex))
+    {
+        document.getElementById("next"+slideIndex).style.display = "none";
+    }
 }
 
