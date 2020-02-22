@@ -3,7 +3,7 @@
     top:0;
     left: 0;
     width: 25%;
-    /* z-index: 10; */
+    z-index: 10;
 }
 .bgImgBottom{
     position: fixed;
@@ -26,15 +26,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex:1;
     /* background-color: red; */
 }
 .header{
     margin: 50px;
-    padding: 100px;
+    padding: 50px 100px;
     /* width:100%; */
+    width:60%;
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
+    flex:0.2;
 }
 h1{
     font-size: 35px;
@@ -54,27 +57,24 @@ h1{
     justify-content: center;
     align-items: center;
     height: 90%;
-    /* background-color: aqua; */
 }
 .imageContainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content:space-around;
 }
 .content{
     display: flex;
     flex-direction: column;
-    /* background-color: orange; */
     justify-content: center;
     align-items: center;
-    /* margin: 0px 10px 0px 10px; */
     width:800px;
 }
 .leftImage{
     display: flex;
     width: 20vw;
     height: 20vw;
-    /* background-color: green; */
     justify-content: center;
     align-items: center;
 }
@@ -87,7 +87,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     margin: 0px 10px;
 
 }
@@ -103,8 +102,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
-        margin: 0px 10px;
+    margin: 0px 10px;
 }
 ul {
     list-style: disc;
@@ -114,8 +112,6 @@ ul li{
     font-size:20px;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 10px;
-    /* list-style-position: outside; */
-    /* margin-left: 1em; */
 }
 ul li::before {
     content: none;
@@ -160,7 +156,6 @@ ul li::before {
     position: relative !important;
     animation-name: example;
     animation-duration: 1s;
-    /* animation-delay: 0.5s; */
   
 }
   
@@ -172,8 +167,6 @@ ul li::before {
     to{ bottom:0px;
     opacity:1 
     }
-    /* from {opacity: 0%;}
-    to{opacity:100%} */
 }
 
   /* width */
@@ -205,13 +198,13 @@ ul li::before {
     display: flex;
     width: 50vw;
     height: 50vw;
-    /* background-color: green; */
     justify-content: center;
     align-items: center;
 }
 .imageContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content:space-around;
 }
 .textContent{
@@ -229,7 +222,6 @@ ul li::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     margin: 10px 10px;
 
 }
@@ -246,26 +238,22 @@ ul li::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     margin: 0px 10px;
 }
 .content{
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    /* background-color: orange; */
     justify-content: center;
     align-items: center;
-    /* margin: 0px 10px 0px 10px; */
     width:375px;
 }
 .header{
     margin: 50px 0px;
     padding: 0px;
-    width:90%;
+    width:80%;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
 }
 h1{
     font-size: 1.2rem;
@@ -283,10 +271,7 @@ h1{
     display: flex;
     align-items:center;
     justify-content: space-around;
-    /* width:90%; */
-    /* height: 120px; */
     padding: 0px;
-    /* z-index: 12; */
 }
 .prevButton{
     display: flex;
@@ -301,13 +286,13 @@ h1{
 
 
 @media only screen and (max-width: 1600px) {
-    .prevButton{
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        width:10%;
-        height: 50px;
-        padding: 0px;
-    }
+.prevButton{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:10%;
+    height: 50px;
+    padding: 0px;
+}
 }
 

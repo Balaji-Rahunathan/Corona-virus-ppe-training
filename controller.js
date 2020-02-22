@@ -4,7 +4,6 @@ showDivs(slideIndex);
 function plusDivs(n) {
 showDivs(slideIndex += n);
 $("html, body").animate({ scrollTop: 0 },100);
-// $("html, body").fadeIn()
 reset()
 }
 

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115.899" height="42.906" viewBox="0 0 115.899 42.906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3fbcf9;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 18px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Group_775" data-name="Group 775" transform="translate(-2424.908 -2815.476)">
+    <rect id="Rectangle_66" data-name="Rectangle 66" class="cls-1" width="115.9" height="42.906" rx="21.453" transform="translate(2424.908 2815.476)"/>
+    <text id="START" class="cls-2" transform="translate(2450.236 2826.285)"><tspan x="3.368" y="17">START</tspan></text>
+  </g>
+</svg>
