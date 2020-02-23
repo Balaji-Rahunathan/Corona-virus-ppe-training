@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="mainContainer">
+    <canvas id="canvas"></canvas>
+    <div id="mainContainer" class="mainContainer">
         <!-- Static Background -->
         <img class="bgImgTop" src="assets/Page/wave-1.png"> 
         <img class="bgImgBottom" src="assets/Page/wave-2.png">
-
 
         <!-- Slide Wearing procedure starts -->
         <div class="slideContainer fade">
@@ -44,15 +44,15 @@
                     <div class="leftText">
                         <!-- <ul> -->
                             <P class="textContent" style="text-align: center; line-height: 30px;">
-                                 BEFORE STARTING THE WEARING (PPE) PROCEDURE WASH HANDS OR USE AN ALCOHOL-BASED HAND SANITIZER.
+                                 BEFORE STARTING PPE WEARING PROCEDURE WASH HANDS OR USE AN ALCOHOL-BASED HAND SANITIZER.
                             </P>
                         <!-- </ul> -->
                     </div>
                 </div>
 
                 <div class="nextButton">
-                    <a  style="display:block;" onclick="plusDivs(1)">
-                        <img src="assets/Page/Start Button.svg" width="120%">
+                    <a  style="display:block;" onclick="plusDivs(1)" >
+                        <img src="assets/Page/Start Button.png" width="80%">
                     </a>
                 </div>
 
@@ -621,11 +621,10 @@
 
         <!-- End of Slide -->
 
-        <!-- Slide nine starts -->
+        <!-- Slide ten starts -->
         <div class="slideContainer fade">
             <div class="header">
                 <h1>PERFORM HAND HYGIENE</span></h1>
-                <!-- <h1>WASH HANDS OR USE AN ALCOHOL-BASED <br> HAND SANITIZER IMMEDIATELY <br> AFTER REMOVING ALL PPE -->
             </div>
             <div class="slide">
                 <div class="content">
@@ -653,14 +652,74 @@
                     <a  style="display: block;" onclick="plusDivs(-1)">
                         <img src="assets/Page/Prev Button.png" width="80%">
                     </a>
-                    <a  style="display:block;" href="https://skillcord.com/app/signup/course/corono">
-                        <img src="assets/Page/Finish.png" width="80%">
+                    <a  style="display: block;" onclick="plusDivs(1)">
+                        <img src="assets/Page/Next Button.png" width="80%">
                     </a>
                 </div>
 
             </div>
         </div>
         <!-- End of Slide -->
+        
+
+        <!-- Slide nine starts -->
+        <div class="slideContainer fade">
+            <div class="header">
+                <h1>QUICK QUESTIONS BEFORE WE FINISH THE <span class="colored">PROCEDURE</span> </h1>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="leftText" style="   display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center; 
+                                                    align-items: center;
+                                                    text-align: center;">
+                            <p class="textContent" >
+                                PPE should be put on before entering the patient room.
+                                <div class="booleanContainer" >
+                                    <a id="q1t" class="false" onclick="toggle(event)">
+                                        True
+                                    </a>
+                                    <a id="q1f" class="false" onclick="toggle(event)">
+                                        False
+                                    </a>
+                                </div>
+                            </p>
+                            <p class="textContent">
+                                Hand Hygiene should be performed every time you remove gloves.
+                                <div class="booleanContainer" >
+                                    <a id="q2t" class="false" onclick="toggle(event)">
+                                        True
+                                    </a>
+                                    <a id="q2f" class="false" onclick="toggle(event)">
+                                        False
+                                    </a>
+                                </div>
+                            </p>
+                            <p class="textContent">
+                                Gloves, eye protection and gown should be removed inside the patient room. Where is the mask removed? Inside or outside the patient room?
+                                <div class="booleanContainer" >
+                                    <a id="q3t" class="false" onclick="toggle(event)">
+                                        Inside
+                                    </a>
+                                    <a id="q3f" class="false" onclick="toggle(event)">
+                                        Outside
+                                    </a>
+                                </div>
+                            </p>
+                    </div>
+
+                        <a id="answer" class="answerCheck" onclick="answer()">
+                            Not Sure Go back and check again
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- End of Slide -->
+
 
 
 
@@ -672,8 +731,7 @@
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="controller.js">
-</script>
+<script src="controller.js"></script>
 
 
 
