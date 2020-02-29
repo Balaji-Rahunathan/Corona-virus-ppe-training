@@ -103,7 +103,8 @@ function toggle(event){
 
     if(q1=="true"&&q2=="true"&&q3=="true")
     {
-        document.getElementById("answer").innerHTML = "Perfect, Let's finish "
+        document.getElementById("answer").innerHTML = "Complete "
+        // answer()
         // loop();
     }
     else{
@@ -118,16 +119,47 @@ function answer(){
 
     if(q1=="true"&&q2=="true"&&q3=="true")
     {
-        document.getElementById("answer").href = "https://skillcord.com/app/signup/course/corono"
+        document.getElementById("answer").onclick = Complete()
     }
     else{
-        document.getElementById("answer").onclick = plusDivs(-10)
+        document.getElementById("answer").onclick = ResetAnswer()
     }
 
     // if()
     // plusDivs(-10)
 }
 
+function Complete() {
+    loop();
+    plusDivs(1);
+}
+
+function ResetAnswer() {
+  plusDivs(-13)
+  document.getElementById("q1t").className = false
+  document.getElementById("q2t").className = false
+  document.getElementById("q3t").className = false
+  document.getElementById("q1f").className = false
+  document.getElementById("q2f").className = false
+  document.getElementById("q3f").className = false
+  document.getElementById("answer").onclick = answer()
+  
+}
+
+
+///Loading Animation
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('mainContainer').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('mainContainer').style.visibility="visible";
+      },1000);
+  }
+}
 
 ////confetti animation
 
@@ -148,7 +180,7 @@ function loop() {
 
 function Confetti () {
   //construct confetti
-  const colours = ['#fde132', '#009bde', '#ff6b00'];
+  const colours = ['#fde132', '#009bde', '#ff6b00',"#0bda8f"];
   
   this.x = Math.round(Math.random() * w);
   this.y = Math.round(Math.random() * h)-(h/2);

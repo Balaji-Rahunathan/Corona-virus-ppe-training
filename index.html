@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Skillcord is taking the opportunity to provide education to Health Care Workers 
+    on the appropriate procedure for  Donning and Doffing PPE as per CDC guidelines. 
+    This is particularly relevant at the moment due to the public health issues evolving 
+    around the world in relation to corona virus.
+    Healthcare workers, we can break the chain of infection.!!!">
+    <meta name="keywords" content="corona, virus, covid-19, outbreak, china, infections, training, health, healthcare, skillcord">
+    <link rel="shortcut icon" href="assets/Page/preview.png" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="assets/Page/icon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114059807-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114059807-1');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2445059198935656');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2445059198935656&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Page Title -->
+    <title>PPE Training</title>
+
     <style>
         body,
         html {
@@ -17,14 +61,49 @@
 
 <body>
     <canvas id="canvas"></canvas>
+    <div id="load"></div>
     <div id="mainContainer" class="mainContainer">
         <!-- Static Background -->
-        <img class="bgImgTop" src="assets/Page/wave-1.png"> 
-        <img class="bgImgBottom" src="assets/Page/wave-2.png">
+        <!-- <img class="bgImgTop" src="assets/Page/wave-1.png"> -->
+        <!-- <img class="bgImgBottom" src="assets/Page/cdc_badge.png">  -->
+
+        <!-- Slide Wearing procedure starts -->
+        <div class="slideContainer" style="height: 100vh; justify-content: flex-start;">
+            <div style="display: flex; justify-content: space-between; width: 90%;height: 20%;">
+                <img src="assets/Page/cdc_badge.png" width="50px" style="object-fit: contain;padding: 10px;" >
+                <img src="assets/Page/Skillcord.png" width="150px" style="object-fit: contain;padding: 10px;" >
+            </div>
+            <div class="slide">
+                <div class="content" >
+                    <div class="imageContainer">
+                        <img src="assets/Page/Landing.png" class="landingImage">
+                    </div>
+                </div>
+
+                <div class="content" style="align-items: flex-start !important; justify-content: center; ">
+
+                    <h1 style="text-align: left !important;">Healthcare workers,<br><span class="colored" style="font-size:25px;color: #0bda8f;"> Let's protect ourselves from infections</span></h1>
+                    <div style="width: 20%; background-color:  #0bda8f;;height: 5px;border-radius: 20px; "></div>
+
+                    <p class="textContent" style="font-size: 20px !important; line-height: 35px; width:90%">
+                        Skillcord is taking the opportunity to provide education to Health Care Workers 
+                        on the appropriate procedure for  Donning and Doffing PPE as per CDC guidelines. 
+                        This is particularly relevant at the moment due to the public health issues evolving 
+                        around the world in relation to corona virus.
+                        Healthcare workers, we can break the chain of infection.
+                    </p>
+                    <a  class="answerCheck" style="margin-left: 0px; background-color: #0bda8f;" onclick="plusDivs(1)" >
+                        Start training
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Slide -->
 
         <!-- Slide Wearing procedure starts -->
         <div class="slideContainer fade">
-            <div class="header">
+            <div class="header" style="margin: 0px 50px; padding: 0px 20px;">
                 <h1>PROCEDURE TO WEAR PERSONAL PROTECTIVE EQUIPMENT (PPE) - <span class="colored">PERFORM HAND HYGIENE</span></h1>
                 <!-- <h1>WASH HANDS OR USE AN ALCOHOL-BASED <br> HAND SANITIZER IMMEDIATELY <br> AFTER REMOVING ALL PPE -->
             </div>
@@ -33,6 +112,7 @@
                     <div class="imageContainer">
                         <div class="leftImage">
                             <img src="assets/hand wash/hand wash 1.svg" width="80%" style="opacity: 0.7;">
+                            
                         </div>
                         <div class="leftImage">
                             <img src="assets/hand wash/hand wash 2.svg" width="80%" style="opacity: 0.7;">
@@ -50,9 +130,9 @@
                     </div>
                 </div>
 
-                <div class="nextButton">
+                <div class="nextButton" style="height:60px; padding: 0px;">
                     <a  style="display:block;" onclick="plusDivs(1)" >
-                        <img src="assets/Page/Start Button.png" width="80%">
+                        <img src="assets/Page/Next Button.png" width="80%">
                     </a>
                 </div>
 
@@ -78,7 +158,7 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Fully cover torso from neck to knees, arms to end of wrists, and wrap around the back
+                                Fully cover torso from neck to knees, arms to end of wrists, and wrap around the back.
                             </li>
                             <li class="textContent">
                                 Fasten in back of neck and waist.
@@ -93,19 +173,22 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage2" class="rightImage" id="dragContainer">
-                            <img id="draggable2" class="draggable" draggable="true" src="assets/gown/gown 3.svg"
-                                width="80%">
+                        <div id="rightImage3" class="rightImage" id="dragContainer">
+                            <img id="draggable3" class="draggable" draggable="true" src="assets/gown/coat.svg"
+                                width="85%">
                         </div>
-                        <div id="div2" class="div1" style='background-image: url("assets/gown/gown 4.png");'>
+                        <div id="div3" class="div1" style='background-image: url("assets/gown/gown 4.png");
+                                                            background-size: 80% 85%;
+                                                            background-position-x: center;
+                                                            background-position-y: center;'>
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the gown to the employee for move to next slide.
+                    <div class="leftText highlight" >
+                        <p class="textContent">Drag the gown to the employee to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
-                        <a id="next2" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next3" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -133,16 +216,16 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Secure ties or elastic bands at middle of head and neck
+                                Secure ties or elastic bands at middle of head and neck.
                             </li>
                             <li class="textContent">
-                                Fit flexible band to nose bridge
+                                Fit flexible band to nose bridge.
                             </li>
                             <li class="textContent">
-                                Fit snug to face and below chin
+                                Fit snug to face and below chin.
                             </li>
                             <li class="textContent">
-                                Fit-check respirator
+                                Fit-check respirator.
                             </li>
                         </ul>
                     </div>
@@ -154,26 +237,26 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage3" class="rightImage" id="dragContainer">
-                            <img id="draggable3" class="draggable" draggable="true" src="assets/mask/mask 2.png"
+                        <div id="rightImage4" class="rightImage" id="dragContainer">
+                            <img id="draggable4" class="draggable" draggable="true" src="assets/mask/mask 2.png"
                                 width="80%">
                         </div>
-                        <div id="div3" class="div1" style=' background-image: url("assets/mask/mask-3.png");
+                        <div id="div4" class="div1" style=' background-image: url("assets/mask/mask-3.png");
                                         background-size: 190% 90%;
                                         background-position-x: center;
                                         background-position-y: -100%;'>
 
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the mask to the employee for move to next slide.
+                    <div class="leftText  highlight ">
+                        <p class="textContent">Drag the mask to the employee to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next3" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next4" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -201,7 +284,7 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Place over face and eyes and adjust to fit
+                                Place over face and eyes and adjust to fit.
                             </li>
                         </ul>
                     </div>
@@ -213,25 +296,25 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage4" class="rightImage" id="dragContainer">
-                            <img id="draggable4" class="draggable" draggable="true" src="assets/goggol/goggole 3.png"
+                        <div id="rightImage5" class="rightImage" id="dragContainer">
+                            <img id="draggable5" class="draggable" draggable="true" src="assets/goggol/goggole 3.png"
                                 width="50%">
                         </div>
-                        <div id="div4" class="div1" style=' background-image: url("assets/goggol/goggole-4.png");
+                        <div id="div5" class="div1" style=' background-image: url("assets/goggol/goggole-4.png");
                                         background-size: 110% 90%;
                                         background-position-x: center;
                                         background-position-y: 120%;'>
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the goggle to the employee for move to next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the goggle to the employee to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next4" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next5" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -259,7 +342,7 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Extend to cover wrist of isolation gown
+                                Extend to cover wrist of isolation gown.
                             </li>
                         </ul>
                     </div>
@@ -271,25 +354,26 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage5" class="rightImage" id="dragContainer">
-                            <img id="draggable5" class="draggable" draggable="true" src="assets/glows/glows.svg"
-                                width="70%">
+                        <div id="rightImage6" class="rightImage" id="dragContainer">
+                            <img id="draggable6" class="draggable" draggable="true" src="assets/glows/glows2.svg"
+                                width="90%">
                         </div>
-                        <div id="div5" class="div1" style=' background-image: url("assets/glows/hand.svg");
-                                        background-size: 70% 40%;
-                                        background-position-x: center;
-                                        background-position-y: 60%;'>
+                        <div id="div6" class="div1" style=' background-image: url("assets/glows/glow-3.png");
+                                                            background-size: 70% 50%;
+                                                            background-repeat: no-repeat;
+                                                            background-position-x: center;
+                                                            background-position-y: 60%;'>
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the gloves to the employee for move to next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the gloves to the employee to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next5" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next6" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -317,17 +401,17 @@
                         <ul>
                             <li class="textContent">
                                 Using a gloved hand, grasp the palm area of the other gloved hand and peel off first
-                                glove
+                                glove.
                             </li>
                             <li class="textContent">
-                                Hold removed glove in gloved hand
+                                Hold removed glove in gloved hand.
                             </li>
                             <li class="textContent">
                                 Slide fingers of ungloved hand under remaining glove at wrist and peel off second glove
-                                over first glove
+                                over first glove.
                             </li>
                             <li class="textContent">
-                                Discard gloves in a waste container
+                                Discard gloves in a waste container.
                             </li>
                         </ul>
                     </div>
@@ -339,30 +423,71 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage6" class="rightImage" style='background-image: url("assets/glows/glow-3.png");
+                        <div id="rightImage7" class="rightImage" style='background-image: url("assets/glows/glow-3.png");
                                                                         background-size: 70% 50%;
                                                                         background-repeat: no-repeat;
                                                                         background-position-x: center;
                                                                         background-position-y: 60%;'>
-                            <img id="draggable6" class="draggable" draggable="true" src="assets/remove glow/glow 04.png"
-                                width="78%">
+                            <img id="draggable7" class="draggable" draggable="true" src="assets/glows/glows2.svg"
+                                width="90%">
                         </div>
-                        <div id="div6" class="div1">
+                        <div id="div7" class="div1">
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the glow to empty box to continue next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the glow to empty box to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next6" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next7" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- End of Slide -->
+
+
+        <!-- Slide ten starts -->
+        <div class="slideContainer fade">
+            <div class="header">
+                <h1>PERFORM HAND HYGIENE</h1>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <div class="imageContainer">
+                        <div class="leftImage">
+                            <img src="assets/hand wash/hand wash 1.svg" width="80%" style="opacity: 0.7;">
+                        </div>
+                        <div class="leftImage">
+                            <img src="assets/hand wash/hand wash 2.svg" width="80%" style="opacity: 0.7;">
+                        </div>
+                        <div class="leftImage">
+                            <img src="assets/hand wash/hand wash 3.svg" width="80%" style="opacity: 0.7;">
+                        </div>
+                    </div>
+                    <div class="leftText">
+                        <ul>
+                            <li class="textContent">
+                                WASH HANDS OR USE AN ALCOHOL-BASED HAND SANITIZER IMMEDIATELY AFTER REMOVING ALL PPE.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nextButton">
+                    <a  style="display: block;" onclick="plusDivs(-1)">
+                        <img src="assets/Page/Prev Button.png" width="80%">
+                    </a>
+                    <a  style="display: block;" onclick="plusDivs(1)">
+                        <img src="assets/Page/Next Button.png" width="80%">
+                    </a>
+                </div>
+
             </div>
         </div>
         <!-- End of Slide -->
@@ -385,18 +510,18 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Outside of goggles or face shield are contaminated!
+                                Outside of goggles or face shield are contaminated!.
                             </li>
                             <li class="textContent">
-                                Remove goggles or face shield from the back by lifting head band or ear pieces
+                                Remove goggles or face shield from the back by lifting head band or ear pieces.
                             </li>
                             <li class="textContent">
                                 If the item is reusable, place in designated receptacle for reprocessing. Otherwise,
-                                discard in a waste container
+                                discard in a waste container.
                             </li>
                             <li class="textContent">
                                 If your hands get contaminated during goggle or face shield removal, immediately wash
-                                your hands or use an alcohol-based hand sanitizer
+                                your hands or use an alcohol-based hand sanitizer.
                             </li>
 
                         </ul>
@@ -409,26 +534,26 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage7" class="rightImage" style='background-image: url("assets/remove goggle/goggole-4.png");
+                        <div id="rightImage9" class="rightImage" style='background-image: url("assets/remove goggle/goggole-4.png");
                                                                         background-size: 100% 90%;
                                                                         background-repeat: no-repeat;
                                                                         background-position-x: center;
                                                                         background-position-y: 120%;'>
-                            <img id="draggable7" class="draggable" draggable="true"
+                            <img id="draggable9" class="draggable" draggable="true"
                                 src="assets/remove goggle/goggole 3.png" width="50%">
                         </div>
-                        <div id="div7" class="div1">
+                        <div id="div9" class="div1">
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the goggle to empty box to continue next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the goggle to empty box to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next7" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next9" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -456,24 +581,24 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Gown front and sleeves are contaminated!
+                                Gown front and sleeves are contaminated!.
                             </li>
                             <li class="textContent">
                                 Unfasten gown ties, taking care that sleeves don’t contact your body when reaching for
-                                ties
+                                ties.
                             </li>
                             <li class="textContent">
-                                Pull gown away from neck and shoulders, touching inside of gown only
+                                Pull gown away from neck and shoulders, touching inside of gown only.
                             </li>
                             <li class="textContent">
-                                Turn gown inside out
+                                Turn gown inside out.
                             </li>
                             <li class="textContent">
-                                Fold or roll into a bundle and discard in a waste container
+                                Fold or roll into a bundle and discard in a waste container.
                             </li>
                             <li class="textContent">
                                 If your hands get contaminated during gown removal, immediately wash your hands or use
-                                an alcohol-based hand sanitizer
+                                an alcohol-based hand sanitizer.
                             </li>
                         </ul>
                     </div>
@@ -485,26 +610,26 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage8" class="rightImage" style='background-image: url("assets/gown/gown 4.png");
-                                                                        background-size: 90% 90%;
-                                                                        background-repeat: no-repeat;
+                        <div id="rightImage10" class="rightImage" style='background-image: url("assets/gown/gown 4.png");
+                                                                        background-size: 80% 90%;
                                                                         background-position-x: center;
-                                                                        background-position-y: center;'>
-                            <img id="draggable8" class="draggable" draggable="true" src="assets/remove gown/gown01.png"
-                                width="80%">
+                                                                        background-position-y: center;
+                                                                        background-repeat: no-repeat;'>
+                            <img id="draggable10" class="draggable" draggable="true" src="assets/gown/coat.svg"
+                                width="85%">
                         </div>
-                        <div id="div8" class="div1">
+                        <div id="div10" class="div1">
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the gown to empty box to continue next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the gown to empty box to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next8" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next10" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -523,10 +648,10 @@
                 <div class="content">
                     <div class="imageContainer">
                         <div class="leftImage">
-                            <img src="assets/remove mask/door open 1.png" width="70%" >
+                            <img src="assets/remove mask/isolation room.png" width="55%" >
                         </div>
                         <div class="leftImage">
-                            <img src="assets/remove mask/door open 2.png" width="60%" >
+                            <img src="assets/remove mask/door open.svg" width="80%" >
                         </div>
                     </div>
                     <div class="leftText">
@@ -535,7 +660,7 @@
                                 Remove all PPE before exiting the patient room except a respirator, if worn.
                             </li>
                             <li class="textContent">
-                                Remove the respirator after leaving the patient room and close the door
+                                Remove the respirator after leaving the patient room and close the door.
                             </li>
                         </ul>
                     </div>
@@ -571,17 +696,17 @@
                     <div class="leftText">
                         <ul>
                             <li class="textContent">
-                                Front of mask/respirator is contaminated — DO NOT TOUCH!
+                                Front of mask/respirator is contaminated — DO NOT TOUCH!.
                             </li>
                             <li class="textContent">
-                                Perform Hand Hygiene
+                                Perform Hand Hygiene.
                             </li>
                             <li class="textContent">
                                 Grasp bottom ties or elastics of the mask/respirator, then the ones at the top, and
-                                remove without touching the front
+                                remove without touching the front.
                             </li>
                             <li class="textContent">
-                                Discard in a waste container
+                                Discard in a waste container.
                             </li>
                         </ul>
                     </div>
@@ -593,25 +718,25 @@
                 </div>
                 <div class="content">
                     <div class="imageContainer">
-                        <div id="rightImage10" class="rightImage" style='background-image: url("assets/mask/mask-3.png");
+                        <div id="rightImage12" class="rightImage" style='background-image: url("assets/mask/mask-3.png");
                                                                         background-size: 190% 90%;
                                                                         background-position-x: center;
                                                                         background-position-y: -100%;'>
-                            <img id="draggable10" class="draggable" draggable="true" src="assets/mask/mask 2.png"
+                            <img id="draggable12" class="draggable" draggable="true" src="assets/mask/mask 2.png"
                                 width="70%">
                         </div>
-                        <div id="div10" class="div1">
+                        <div id="div12" class="div1">
                         </div>
                     </div>
-                    <div class="leftText">
-                        <p class="textContent">Drag the mask to empty box to continue next slide.
+                    <div class="leftText  highlight">
+                        <p class="textContent">Drag the mask to empty box to continue to the next slide.
                         </p>
                     </div>
                     <div class="nextButton">
                         <a  style="display: block;" onclick="plusDivs(-1)">
                             <img src="assets/Page/Prev Button.png" width="80%">
                         </a>
-                        <a id="next10" style="display: none;" onclick="plusDivs(1)">
+                        <a id="next12" style="display: none;" onclick="plusDivs(1)">
                             <img src="assets/Page/Next Button.png" width="80%">
                         </a>
                     </div>
@@ -624,7 +749,7 @@
         <!-- Slide ten starts -->
         <div class="slideContainer fade">
             <div class="header">
-                <h1>PERFORM HAND HYGIENE</span></h1>
+                <h1>PERFORM HAND HYGIENE</h1>
             </div>
             <div class="slide">
                 <div class="content">
@@ -665,11 +790,12 @@
         <!-- Slide nine starts -->
         <div class="slideContainer fade">
             <div class="header">
-                <h1>QUICK QUESTIONS BEFORE WE FINISH THE <span class="colored">PROCEDURE</span> </h1>
+                <h1>QUICK QUESTIONS BEFORE WE <span class="colored">FINISH</span> </h1>
             </div>
             <div class="slide">
-                <div class="content">
+                <div class="content" style="height: max-content;">
                     <div class="leftText" style="   display: flex;
+                                                    display:-webkit-flex;
                                                     flex-direction: column;
                                                     justify-content: center; 
                                                     align-items: center;
@@ -708,16 +834,44 @@
                                 </div>
                             </p>
                     </div>
-
-                        <a id="answer" class="answerCheck" onclick="answer()">
-                            Not Sure Go back and check again
-                        </a>
+                    <a id="answer" class="answerCheck" onclick="answer()">
+                        Not Sure Go back and check again
+                    </a>
                 </div>
             </div>
         </div>
+        <!-- End of Slide -->
 
-        
 
+        <!-- Slide ten starts -->
+        <div class="slideContainer fade">
+            <div class="header" style="padding: 0px 100px 0px 100px; margin: 50px 50px 0px 50px;">
+                <h1>Well done!!! Training Completed<span class="colored"> Successfully</span></h1>
+            </div>
+            <div class="slide" style="align-items: center; height: 100%;">
+                <div class="content">
+                    <div class="imageContainer">
+                        <div class="leftImage">
+                            <img src="assets/Page/Success.png" width="80%">
+                        </div>
+                    </div>
+                    <div class="leftText" style="width: 90%;">
+                            <p class="textContent" style="text-align: center; font-size: 1rem; width:100%">
+                                Do you want to download  your  training completion certificate ? <br>
+                            </p>
+                            <p class="textContent" style="text-align: center; font-size: 1rem; width:100%">
+                                Please Sign up to Skillcord, your single point of access to your training records.
+                            </p>
+                            
+                    </div>
+
+                    <a  class="answerCheck" href="https://skillcord.com/app/signup/course/PPE-Training">
+                        Click here
+                    </a>
+                </div>
+
+            </div>
+        </div>
         <!-- End of Slide -->
 
 
@@ -728,8 +882,8 @@
 
 </body>
 
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="controller.js"></script>
 
