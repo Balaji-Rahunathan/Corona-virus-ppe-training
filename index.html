@@ -34,7 +34,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -823,7 +823,8 @@
         <div class="slideContainer fade">
             <div style="display: flex; justify-content: space-between; width: 90%; align-items:flex-start">
                 <img src="assets/Page/cdc_badg.png" alt="" width="50px" style="object-fit: contain;padding: 10px;">
-            <img src="assets/Page/built with Skillcord.png" width="150px" style="object-fit: contain;padding: 10px;">
+                <img src="assets/Page/built with Skillcord.png" width="150px"
+                    style="object-fit: contain;padding: 10px;">
             </div>
             <div class="header" style="padding: 0px 100px 0px 100px; margin: 50px 50px 0px 50px;">
                 <h1>Well done!!! Training Completed<span class="colored"> Successfully</span></h1>
@@ -835,24 +836,29 @@
                             <img src="assets/Page/Success.png" width="80%">
                         </div>
                     </div>
-                    <!-- <div class="leftText" style="width: 90%;">
-                            <p class="textContent" style="text-align: center; font-size: 1rem; width:100%">
-                                Do you want to download  your  training completion certificate ? <br>
-                            </p>
-                            <p class="textContent" style="text-align: center; font-size: 1rem; width:100%">
+                    <div class="leftText" style="width: 90%;">
+                        <p class="textContent" style="text-align: center; line-height:30px; font-size: 1rem; width:100%">
+                            Thank you Very much for undertaking this PPE Training and for being part of this war against
+                            COVID-19. This application is built by Skillcord,Ireland, your single point of access to
+                            your training records..<br> Pls <a
+                                style ="color:#3fbcf9;"
+                                href="https://skillcord.com/app/signup/course/PPE-Training-2"> click here </a> to sign up
+                                for free.
+                        </p>
+                        <!-- <p class="textContent" style="text-align: center; font-size: 1rem; width:100%">
                                 Please Sign up to Skillcord, your single point of access to your training records.
-                            </p>
-                            
-                    </div> -->
-                    <div style="display: flex; flex-direction: row; padding:10px; justify-content:center; flex-wrap:wrap;" >
+                            </p> -->
+
+                    </div>
+                    <!-- <div style="display: flex; flex-direction: row; padding:10px; justify-content:center; flex-wrap:wrap;" >
                         <a style="text-decoration: none; width:200px;" class="answerCheck" href="https://skillcord.com/app/signup/course/PPE-Training-2">
                             Download Certificate
-                        </a>
+                        </a> -->
 
-                        <a style="text-decoration: none; width:100px;"  class="answerCheck" onclick="plusDivs(-14)">
-                            No Thanks
-                        </a>
-                    </div>
+                    <a style="text-decoration: none; width:100px;" class="answerCheck" onclick="plusDivs(-14)">
+                        No Thanks
+                    </a>
+                    <!-- </div> -->
                 </div>
 
             </div>
